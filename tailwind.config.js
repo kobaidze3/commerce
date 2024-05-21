@@ -27,6 +27,13 @@ module.exports = {
         fadeIn: 'fadeIn .3s ease-in-out',
         carousel: 'marquee 60s linear infinite',
         blink: 'blink 1.4s both infinite'
+      },
+      colors: {
+        woocommerce: {
+          primary: '#96588a',
+          secondary: '#333333',
+          accent: '#81d742'
+        }
       }
     }
   },
@@ -52,3 +59,4 @@ module.exports = {
     })
   ]
 };
+
