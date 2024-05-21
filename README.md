@@ -34,6 +34,7 @@ Vercel is happy to partner and work with any commerce provider to help them get 
 - [Swell](https://github.com/swellstores/verswell-commerce) ([Demo](https://verswell-commerce.vercel.app/))
 - [Umbraco](https://github.com/umbraco/Umbraco.VercelCommerce.Demo) ([Demo](https://vercel-commerce-demo.umbraco.com/))
 - [Wix](https://github.com/wix/nextjs-commerce) ([Demo](https://wix-nextjs-commerce.vercel.app/))
+- [WooCommerce](https://github.com/woocommerce/nextjs-commerce) ([Demo](https://woocommerce-nextjs-commerce.vercel.app/))
 
 > Note: Providers, if you are looking to use similar products for your demo, you can [download these assets](https://drive.google.com/file/d/1q_bKerjrwZgHwCw0ovfUMW6He9VtepO_/view?usp=sharing).
 
@@ -75,3 +76,30 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 ## Vercel, Next.js Commerce, and Shopify Integration Guide
 
 You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.
+
+## WooCommerce Integration Guide
+
+To set up WooCommerce with Next.js Commerce, follow these steps:
+
+1. **Environment Variables**: Add the following environment variables to your `.env` file:
+
+    ```env
+    WOOCOMMERCE_STORE_URL=your-woocommerce-store-url
+    WOOCOMMERCE_CONSUMER_KEY=your-woocommerce-consumer-key
+    WOOCOMMERCE_CONSUMER_SECRET=your-woocommerce-consumer-secret
+    ```
+
+2. **Install Dependencies**: Ensure you have the necessary dependencies installed:
+
+    ```bash
+    pnpm install
+    ```
+
+3. **Run the Development Server**: Start your development server:
+
+    ```bash
+    pnpm dev
+    ```
+
+Your WooCommerce integration should now be set up and running on [localhost:3000](http://localhost:3000/).
+
