@@ -73,5 +73,28 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 </details>
 
 ## Vercel, Next.js Commerce, and Shopify Integration Guide
+## Test123 Component
 
+The `Test123` component is a simple functional React component that renders the text 'test123'. It is primarily used for demonstration and testing purposes.
+
+### Usage
+
+To use the `Test123` component, simply import it and include it in your JSX:
+
+```jsx
+import Test123 from 'components/test123';
+
+function App() {
+  return (
+    <div>
+      <Test123 />
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Vercel, Next.js Commerce, and Shopify Integration Guide
 You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.
+
