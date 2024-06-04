@@ -6,8 +6,8 @@ import Footer from 'components/layout/footer';
 import { Gallery } from 'components/product/gallery';
 import { ProductDescription } from 'components/product/product-description';
 import { HIDDEN_PRODUCT_TAG } from 'lib/constants';
-import { getProduct, getProductRecommendations } from 'lib/shopify';
-import { Image } from 'lib/shopify/types';
+import { getWooCommerceProduct, getWooCommerceProductRecommendations } from 'lib/woocommerce';
+import { Image } from 'lib/woocommerce/types';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
 }: {
   params: { handle: string };
 }): Promise<Metadata> {
-  const product = await getProduct(params.handle);
+  const product = await getWooCommerceProduct(params.handle);
 
   if (!product) return notFound();
 
@@ -50,7 +50,7 @@ export async function generateMetadata({
 }
 
 export default async function ProductPage({ params }: { params: { handle: string } }) {
-  const product = await getProduct(params.handle);
+  const product = await getWooCommerceProduct(params.handle);
 
   if (!product) return notFound();
 
@@ -108,7 +108,7 @@ export default async function ProductPage({ params }: { params: { handle: string
 }
 
 async function RelatedProducts({ id }: { id: string }) {
-  const relatedProducts = await getProductRecommendations(id);
+  const relatedProducts = await getWooCommerceProductRecommendations(id);
 
   if (!relatedProducts.length) return null;
 
@@ -140,3 +140,4 @@ async function RelatedProducts({ id }: { id: string }) {
     </div>
   );
 }
+
