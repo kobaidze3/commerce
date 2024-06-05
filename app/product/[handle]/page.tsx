@@ -6,8 +6,8 @@ import Footer from 'components/layout/footer';
 import { Gallery } from 'components/product/gallery';
 import { ProductDescription } from 'components/product/product-description';
 import { HIDDEN_PRODUCT_TAG } from 'lib/constants';
-import { getProduct, getProductRecommendations } from 'lib/shopify';
-import { Image } from 'lib/shopify/types';
+import { getProduct, getProductRecommendations } from 'lib/woocommerce';
+import { Image } from 'lib/woocommerce/types';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
 }: {
   params: { handle: string };
 }): Promise<Metadata> {
-  const product = await getProduct(params.handle);
+  const product = await getProduct(params.handle, 'handle');
 
   if (!product) return notFound();
 
@@ -50,7 +50,7 @@ export async function generateMetadata({
 }
 
 export default async function ProductPage({ params }: { params: { handle: string } }) {
-  const product = await getProduct(params.handle);
+  const product = await getProduct(params.handle, 'handle');
 
   if (!product) return notFound();
 
@@ -65,9 +65,9 @@ export default async function ProductPage({ params }: { params: { handle: string
       availability: product.availableForSale
         ? 'https://schema.org/InStock'
         : 'https://schema.org/OutOfStock',
-      priceCurrency: product.priceRange.minVariantPrice.currencyCode,
-      highPrice: product.priceRange.maxVariantPrice.amount,
-      lowPrice: product.priceRange.minVariantPrice.amount
+      priceCurrency: product.currency,
+      highPrice: product.price,
+      lowPrice: product.price
     }
   };
 
@@ -89,8 +89,8 @@ export default async function ProductPage({ params }: { params: { handle: string
             >
               <Gallery
                 images={product.images.map((image: Image) => ({
-                  src: image.url,
-                  altText: image.altText
+                  src: image.src,
+                  altText: image.alt
                 }))}
               />
             </Suspense>
@@ -126,10 +126,10 @@ async function RelatedProducts({ id }: { id: string }) {
                 alt={product.title}
                 label={{
                   title: product.title,
-                  amount: product.priceRange.maxVariantPrice.amount,
-                  currencyCode: product.priceRange.maxVariantPrice.currencyCode
+                  amount: product.price,
+                  currencyCode: product.currency
                 }}
-                src={product.featuredImage?.url}
+                src={product.featuredImage?.src}
                 fill
                 sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
               />
@@ -140,3 +140,4 @@ async function RelatedProducts({ id }: { id: string }) {
     </div>
   );
 }
+
