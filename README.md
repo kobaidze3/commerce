@@ -45,6 +45,32 @@ Integrations enable upgraded or additional functionality for Next.js Commerce
   - Upgrades search to include typeahead with dynamic re-rendering, vector-based similarity search, and JS-based configuration.
   - Search runs entirely in the browser for smaller catalogs or on a CDN for larger.
 
+## Test123 Component
+
+The `Test123` component is a functional React component written in TypeScript. It is designed to display a title and description with conditional styling based on its active state.
+
+### Props
+
+- `title` (string): The title to display.
+- `description` (string): The description to display.
+- `isActive` (boolean): Determines the styling of the component.
+
+### Usage
+
+```jsx
+import Test123 from 'components/test123';
+
+function Example() {
+  return (
+    <Test123
+      title="Sample Title"
+      description="This is a sample description."
+      isActive={true}
+    />
+  );
+}
+```
+
 ## Running locally
 
 You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js Commerce. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/concepts/projects/environment-variables) for this, but a `.env` file is all that is necessary.
@@ -75,3 +101,4 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 ## Vercel, Next.js Commerce, and Shopify Integration Guide
 
 You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.
+
