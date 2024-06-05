@@ -75,3 +75,25 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 ## Vercel, Next.js Commerce, and Shopify Integration Guide
 
 You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.
+
+## Test123 Component
+
+The `Test123` component is a simple functional component designed to demonstrate the use of the `clsx` library for conditional class names and Tailwind CSS for styling. It renders a heading and a paragraph inside a styled `div`.
+
+### Usage
+
+To use the `Test123` component, simply import it and include it in your JSX as shown below:
+
+```jsx
+import Test123 from 'components/test123';
+
+function App() {
+  return (
+    <div>
+      <Test123 />
+    </div>
+  );
+}
+
+export default App;
+
