@@ -75,3 +75,8 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 ## Vercel, Next.js Commerce, and Shopify Integration Guide
 
 You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.
+
+## Test Folder and Test File
+
+A new folder named `test_folder` has been added to the root directory of the repository. This folder contains a file named `test_file.txt`. The purpose of this folder and file is to serve as a placeholder for testing and demonstration purposes. You can use this folder to add any test files or scripts that you may need during development.
+
