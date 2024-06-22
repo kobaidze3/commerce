@@ -1,0 +1,9 @@
+This is a test file.
+```
+
+The above code represents the content that should be written into the `test_file.txt` file. 
+
+To summarize, the file `kobaidze3/commerce/test_folder/test_file.txt` will contain the following content:
+```
+This is a test file.
+
