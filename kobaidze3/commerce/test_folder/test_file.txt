@@ -1,0 +1,14 @@
+This is a test file.
+```
+
+The above code represents the content of the `test_file.txt` file. To create this file in the specified directory, follow these steps:
+
+1. Ensure the `test_folder` directory exists in the `kobaidze3/commerce` repository.
+2. Create the `test_file.txt` file within the `test_folder` directory.
+3. Write the specified content into the file.
+
+Here is the full content of the `test_file.txt` file:
+
+```
+This is a test file.
+
