@@ -1,0 +1,11 @@
+This is a test file.
+```
+
+The above code represents the content that should be written into the `test_file.txt` file. 
+
+Now, let's create the file with the specified content.
+
+Code:
+```
+This is a test file.
+
