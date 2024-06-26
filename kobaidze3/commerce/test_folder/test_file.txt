@@ -1,0 +1,11 @@
+# Creating the file kobaidze3/commerce/test_folder/test_file.txt with initial content
+
+# Initial content for the file
+initial_content = """This is the initial content of the test_file.txt.
+It is created as part of the test1234 issue.
+"""
+
+# Writing the initial content to the file
+with open('kobaidze3/commerce/test_folder/test_file.txt', 'w') as file:
+    file.write(initial_content)
+
