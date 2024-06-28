@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { ProductOption, ProductVariant } from 'lib/shopify/types';
 import { createUrl } from 'lib/utils';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import Test123 from 'components/test123';
 
 type Combination = {
   id: string;
@@ -38,7 +39,9 @@ export function VariantSelector({
     )
   }));
 
-  return options.map((option) => (
+  return (
+    <Test123 className="variant-selector-wrapper">
+      {options.map((option) => (
     <dl className="mb-8" key={option.id}>
       <dt className="mb-4 text-sm uppercase tracking-wide">{option.name}</dt>
       <dd className="flex flex-wrap gap-3">
@@ -102,5 +105,8 @@ export function VariantSelector({
         })}
       </dd>
     </dl>
-  ));
+      ))}
+    </Test123>
+  );
 }
+
