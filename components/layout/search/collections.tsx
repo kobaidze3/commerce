@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 
 import { getCollections } from 'lib/shopify';
 import FilterList from './filter';
+import Test123 from '../../test123';
 
 async function CollectionList() {
   const collections = await getCollections();
@@ -33,5 +34,7 @@ export default function Collections() {
     >
       <CollectionList />
     </Suspense>
+    <Test123 />
   );
 }
+
