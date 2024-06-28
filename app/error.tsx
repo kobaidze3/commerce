@@ -1,5 +1,7 @@
 'use client';
 
+import Test123 from '../components/test123';
+
 export default function Error({ reset }: { reset: () => void }) {
   return (
     <div className="mx-auto my-4 flex max-w-xl flex-col rounded-lg border border-neutral-200 bg-white p-8 md:p-12 dark:border-neutral-800 dark:bg-black">
@@ -14,6 +16,8 @@ export default function Error({ reset }: { reset: () => void }) {
       >
         Try Again
       </button>
+      <Test123 />
     </div>
   );
 }
+

@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import Label from '../label';
+import Test123 from '../test123';
 
 export function GridTileImage({
   isInteractive = true,
@@ -45,6 +46,8 @@ export function GridTileImage({
           position={label.position}
         />
       ) : null}
+      <Test123 />
     </div>
   );
 }
+
