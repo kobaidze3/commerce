@@ -1,3 +1,22 @@
+# Project Title
+Next.js Commerce
+
+## Description
+Next.js Commerce is a modern e-commerce template built with Next.js 14, featuring a range of advanced features such as React Server Components, Edge Runtime, and integration with Shopify for checkout and payments.
+
+## Installation Instructions
+To install and run the project locally, follow these steps:
+1. Clone the repository: `git clone https://github.com/kobaidze3/commerce.git`
+2. Navigate to the project directory: `cd commerce`
+3. Install dependencies: `pnpm install`
+4. Run the development server: `pnpm dev`
+
+## Usage
+Once the development server is running, you can access the application at `http://localhost:3000`. Use the application to browse products, add them to the cart, and proceed to checkout.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](./license.md) file for more details.
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fcommerce&project-name=commerce&repo-name=commerce&demo-title=Next.js%20Commerce&demo-url=https%3A%2F%2Fdemo.vercel.store&demo-image=https%3A%2F%2Fbigcommerce-demo-asset-ksvtgfvnd.vercel.app%2Fbigcommerce.png&env=COMPANY_NAME,SHOPIFY_REVALIDATION_SECRET,SHOPIFY_STORE_DOMAIN,SHOPIFY_STOREFRONT_ACCESS_TOKEN,SITE_NAME,TWITTER_CREATOR,TWITTER_SITE)
 
 # Next.js Commerce
@@ -75,3 +94,4 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 ## Vercel, Next.js Commerce, and Shopify Integration Guide
 
 You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.
+
