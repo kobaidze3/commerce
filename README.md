@@ -74,4 +74,19 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 
 ## Vercel, Next.js Commerce, and Shopify Integration Guide
 
-You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.
+You can use this comprehensive [integration guide](http://vercel.com/docs/integrations/shopify) with step-by-step instructions on how to configure Shopify as a headless CMS using Next.js Commerce as your headless Shopify storefront on Vercel.# Project Title
+
+## Description
+This project is a template for building an ecommerce site using Next.js and Shopify. It includes features like server-side rendering, dynamic routing, and integration with Shopify for product management.
+
+## Installation Instructions
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd <project-directory>`
+3. Install dependencies: `pnpm install`
+4. Set up environment variables as per `.env.example`.
+
+## Usage
+To start the development server, run: `pnpm dev`. The application will be available at `http://localhost:3000`.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
